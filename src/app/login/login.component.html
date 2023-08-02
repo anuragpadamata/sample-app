@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated LoginForm</title>
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" name="username" [(ngModel)]="username" required="required">
+                <span>Username</span>
+                <i></i>
+
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" [(ngModel)]="password" required="required">
+                <span>Password</span>
+                <i></i>
+
+            </div>
+            <div class="links">
+                <a routerLink="">Forgot password?</a>
+                <a routerLink="">Signup</a>             
+                
+
+            </div>
+            <div class="sub">
+                <input type="submit" (click)="login()" value="Login">
+
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
